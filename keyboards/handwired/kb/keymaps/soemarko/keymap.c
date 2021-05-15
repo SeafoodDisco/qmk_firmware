@@ -2,11 +2,11 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-	KEYMAP(
-		SGUI(KC_Z), SGUI(KC_4), KC_MEDIA_PREV_TRACK, KC_MEDIA_PLAY_PAUSE, LT(1, KC_MEDIA_NEXT_TRACK), KC_MUTE),
+	KEYMAP( // mute zoom, screenshot, prev song, play/payse, next song (or next layer when held), mute system (encoder click)
+		SGUI(KC_Z), SGUI(KC_5), KC_MEDIA_PREV_TRACK, KC_MEDIA_PLAY_PAUSE, LT(1, KC_MEDIA_NEXT_TRACK), KC_MUTE),
 
-	KEYMAP(
-		RESET, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+	KEYMAP( // reset (for flashing), escape, transparent, system sleep, transparent, transparent
+		RESET, KC_ESC, KC_TRNS, LGUI(LALT(KC_EJCT)), KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
